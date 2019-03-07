@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Macro Meals LLC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MEALS</a> 
+    <a href="#science" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCIENCE</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SCHEDULE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGN UP</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MEALS</a>
+    <a href="#science" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCIENCE</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SCHEDULE</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SIGNUP</a>
+
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.pexels.com/photos/235922/pexels-photo-235922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Nutrition</h3>
+      <p><b></b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Inspiration</h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://images.pexels.com/photos/1619299/pexels-photo-1619299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Strength</h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+
+  <!-- Meal Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">MEALS</h2>
+    <p class="w3-opacity"><i>A meal plan designed for you</i></p>
+    <p class="w3-justify">Different training regimens require various macronutrients in order to effectively develop and rehabilitate the body. MarcoMeals provides you with pre and post-training meal options that will give you the strength and energy you need to perform better and maximize the effectiveness of the exercise. </p>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://images.pexels.com/photos/704571/pexels-photo-704571.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Scrambled Eggs" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-black">
+            <p><b>Eggy Endurance Eats</b></p>
+            <p class="w3-opacity">High protein breakfast</p>
+            <p>A quick and easy meal for A.M. trainers that is light and provides high energy.</p>
+            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('eggyModal').style.display='block'">Get Recipe</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://diabetesstrong.com/wp-content/uploads/2015/06/spinach-rolls.jpg" alt="Spinach roll" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-black">
+            <p><b>Sprint Stud Spinach</b></p>
+            <p class="w3-opacity">Vegetarian protein option</p>
+            <p>Ideal for meal-prepping vegetarians that require a high protein diet.</p>
+            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Recipe</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="https://s3-us-east-2.amazonaws.com/thesaltymarshmallow/wp-content/uploads/2018/08/19195607/beef-stroganoff2.jpg" alt="Beef stroganoff" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-black">
+            <p><b>Big Boy Beef</b></p>
+            <p class="w3-opacity">High protein meal</p>
+            <p>A high protein and high carb option for pre or post training.</p>
+            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Recipe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Eggy modal -->
+<div id="eggyModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-green w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('eggyModal').style.display='none'" 
+       class="w3-button w3-green w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="w3-margin-right"></i>Eggy Endurance Eats</h2>
+      </header>
+      <div class="w3-container">
+        <ul>Ingredients
+          <li>
+            <div class="tab-content is-open" style="display: block;">
+                <table>
+		<tbody><tr>
+                    <td>4</td>
+                    <td itemprop="ingredients">EGGS</td>
+                  </tr>
+				<tr>
+                    <td>1/4 cup</td>
+                    <td itemprop="ingredients">milk</td>
+                  </tr>
+				<tr>
+                    <td></td>
+                    <td itemprop="ingredients">salt and pepper, as desired</td>
+                  </tr>
+				<tr>
+                    <td>2 tsp.</td>
+                    <td itemprop="ingredients">butter</td>
+                  </tr>
+                </tbody></table>
+               <p>Yields: <strong>2 servings</strong></p>
+            </div>
+          </li>
+<div class="page-break"></div>
+<ul>Nutrition</ul>
+          <div>
+<p>Total Fat: 14 g<br>
+Saturated fat: 6 g<br>
+Polyunsaturated fat: 2 g<br>
+Monounsaturated fat: 5 g</p>
+<p>Cholesterol: 385 mg<br>
+Sodium: 157 mg<br>
+Carbohydrates: 2 g<br>
+Dietary Fiber: 0 g<br>
+Protein: 14 g<br>
+Vitamin A: 716.2 IU<br>
+Vitamin D: 99.8 IU<br>
+Folate: 48.7 mcg<br>
+Calcium: 93.7 mg<br>
+Iron: 1.8 mg<br>
+Choline: 257 mg</p>
+</div>
+        </ul>
+      </section>
+      <button class="w3-button w3-red w3-section" onclick="document.getElementById('eggyModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Ticket Modal 
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  -->
+  <!-- Science section -->
+  <div class="w3-container w3-black w3-content w3-center w3-padding-64" style="max-width:800px" id="science">
+    <h2 class="w3-wide">SCIENCE</h2>
+    <p class="w3-opacity"><i>Nutrition science applied to you</i></p>
+    <p class="w3-justify">Gimme that good good lab coat apperance</p>
+   </div>
+    
+    
+  <!-- Meal schedule section -->
+  <div id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">MEAL SCHEDULE</h2>
+      <p class="w3-opacity w3-center"><i>Nutrition planned by science</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+      	<li>Time <span class="w3-margin-left"> Meal plan</span>
+        <span class="w3-right">Water Oz.</span>
+        <li class="w3-padding">12pm<span class="w3-tag w3-green w3-margin-left">Sprint Stud Spinach</span>
+        <span class="w3-tag w3-badge w3-right">20</span></li>
+        <li class="w3-padding">5pm  <span class="w3-tag w3-red w3-margin-left">Training Trail mix</span>
+        <span class="w3-tag w3-badge w3-right">20</span></li>
+        <li class="w3-padding">7pm  <span class="w3-tag w3-blue w3-margin-left">BIG BOY BEEF</span>
+        <span class="w3-tag w3-badge w3-right">20</span></li>
+      </ul>
+    </div>  
+  </div>
+  <!-- Recipe Modal--> 
+  <div id="beef" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-plate w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+<!--
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>BIG BOY BEEF</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="REcipe Image" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>SPRINT STUD SPINACH</p>
+        <img src="\C:\Users\Jared\Desktop\Coding\hackathon\images" class="w3-round w3-margin-bottom" alt="Recipe Image" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>EGGY ENDURANCE EATS</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Recipe Image" style="width:60%">
+      </div>
+    </div>
+  </div>
+-->
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-black w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">SIGN UP!</h2>
+    <p class="w3-opacity w3-center"><i>Let's work together for better training</i></p>
+    <div class="w3-row w3-padding-32">
+     <!--
+     <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      -->
+      <div>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Goal" required name="Message">
+          <button class="w3-button w3-White w3-section w3-right" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="https://images.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- Ticket Modal 
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  -->
+</body>
+</html>
